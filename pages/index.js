@@ -1,10 +1,10 @@
 import React from "react";
-import TableExample from "../components/TableExample";
+import Login from "./auth/login";
 
 export default function Home() {
 	return (
 		<>
-			<TableExample />
+			<Login />
 		</>
 	);
 }

@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import * as Yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { ErrorMessage } from "@hookform/error-message";
+import { useRouter } from "next/router";
 
 const schema = Yup.object().shape({
 	email: Yup.string()
@@ -14,13 +15,19 @@ const schema = Yup.object().shape({
 });
 
 const Login = () => {
+	// Initialize Router
+	const router = useRouter(0);
+
+	// Initialize Form
 	const { register, handleSubmit, errors } = useForm({
 		resolver: yupResolver(schema),
 		mode: "onBlur",
 	});
 
 	const onSubmit = (data) => {
-		alert(JSON.stringify(data));
+		if (data.email === "test@test.com") {
+			router.push("/dashboard");
+		}
 	};
 
 	return (
@@ -63,7 +70,7 @@ const Login = () => {
 								Password
 							</label>
 							<input
-								type="text"
+								type="password"
 								className="input-box focus:outline-none focus:shadow-outline"
 								id="password"
 								placeholder="Password"
