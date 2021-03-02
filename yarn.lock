@@ -932,6 +932,19 @@ graceful-fs@^4.1.2, graceful-fs@^4.1.6, graceful-fs@^4.2.0:
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.6.tgz#ff040b2b0853b23c3d31027523706f1885d76bee"
   integrity sha512-nTnJ528pbqxYanhpDYsi4Rd8MAeaBA67+RZ10CM1m3bTAVFEDcd5AuA4a6W5YkGZ1iNXHzZz8T6TBKLeBuNriQ==
 
+gridjs-react@^3.2.2:
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/gridjs-react/-/gridjs-react-3.2.2.tgz#ede018a9ad20a4d7c3f04aef2a0385124a73aab6"
+  integrity sha512-ukvyHYx11DxFoHS0yMiR1bnG1T4PFV+LCH7ashWaeJitLt/j83g3Fh0rAyMqTcSBSM7CQ/uNI8m35Nl6uDFA7A==
+
+gridjs@^3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/gridjs/-/gridjs-3.3.0.tgz#09a3d69d1cd5a35ef165b0d32cddaad88c9b0a18"
+  integrity sha512-Hbahuhf+71rwq/UzP/Goj3TWYfJs3wwXKzN7SnZfQJ55aw/bZcPekck/gLE+a0ixx4WwtfwVeGtGH0Qx2xHOcw==
+  dependencies:
+    preact "^10.5.7"
+    tslib "^2.0.1"
+
 has-flag@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/has-flag/-/has-flag-3.0.0.tgz#b5d454dc2199ae225699f3467e5a07f3b955bafd"
@@ -1636,6 +1649,11 @@ postcss@^8.1.6, postcss@^8.2.1, postcss@^8.2.6:
     nanoid "^3.1.20"
     source-map "^0.6.1"
 
+preact@^10.5.7:
+  version "10.5.12"
+  resolved "https://registry.yarnpkg.com/preact/-/preact-10.5.12.tgz#6a8ee8bf40a695c505df9abebacd924e4dd37704"
+  integrity sha512-r6siDkuD36oszwlCkcqDJCAKBQxGoeEGytw2DGMD5A/GGdu5Tymw+N2OBXwvOLxg6d1FeY8MgMV3cc5aVQo4Cg==
+
 prebuild-install@^6.0.0:
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/prebuild-install/-/prebuild-install-6.0.1.tgz#5902172f7a40eb67305b96c2a695db32636ee26d"
@@ -2250,6 +2268,11 @@ ts-pnp@^1.1.6:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/ts-pnp/-/ts-pnp-1.2.0.tgz#a500ad084b0798f1c3071af391e65912c86bca92"
   integrity sha512-csd+vJOb/gkzvcCHgTGSChYpy5f1/XKNsmvBGO4JXS+z1v2HobugDz4s1IeFXM3wZB44uczs+eazB5Q/ccdhQw==
+
+tslib@^2.0.1:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.1.0.tgz#da60860f1c2ecaa5703ab7d39bc05b6bf988b97a"
+  integrity sha512-hcVC3wYEziELGGmEEXue7D75zbwIIVUMWAVbHItGPx0ziyXxrOMQx4rQEVEV45Ut/1IotuEvwqPopzIOkDMf0A==
 
 tty-browserify@0.0.0:
   version "0.0.0"
