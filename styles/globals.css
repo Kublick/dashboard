@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn-blue {
+	@apply w-full p-2 font-bold text-white uppercase bg-gray-800 rounded-md;
+	@apply hover:bg-blue-600;
+}
+
+.input-box {
+	@apply w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none;
+}
+
+.error-box {
+	@apply py-4 mt-4 text-center text-red-600 bg-gray-200 border-l border-red-600;
+}
