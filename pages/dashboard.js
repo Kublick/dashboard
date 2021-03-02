@@ -1,47 +1,33 @@
 import React from "react";
-import { useTable } from "react-table";
+import { useTable, useSortBy } from "react-table";
 import { users } from "../fakedata/data";
 
 const Dashboard = () => {
-	const data = React.useMemo(
-		() => [
-			{
-				col1: "Hello",
-				col2: "World",
-			},
-			{
-				col1: "react-table",
-				col2: "rocks",
-			},
-			{
-				col1: "whatever",
-				col2: "you want",
-			},
-		],
-		[]
-	);
+	const data = React.useMemo(() => users, []);
+
+	// accessor is the "key" in the data
 
 	const columns = React.useMemo(
 		() => [
 			{
 				Header: "",
-				accessor: "user.picture_url", // accessor is the "key" in the data
+				accessor: "user.picture_url",
 			},
 			{
 				Header: "Display Name",
-				accessor: "user.name",
+				accessor: "name",
 			},
 			{
 				Header: "Email",
-				accessor: "user.email",
+				accessor: "email",
 			},
 			{
 				Header: "Status",
-				accessor: "user.status",
+				accessor: "is_active",
 			},
 			{
 				Header: "Actions",
-				accessor: "user.actions",
+				accessor: "actions",
 			},
 		],
 		[]
@@ -101,10 +87,6 @@ const Dashboard = () => {
 					})}
 				</tbody>
 			</table>
-
-			{users.map((user) => (
-				<p key={user.id}>{user.name}</p>
-			))}
 		</div>
 	);
 };
