@@ -5,8 +5,10 @@ const LeftSidebar = () => {
 		<>
 			<aside className="p-5 bg-gray-800 sm:w-1/3 lg:w-1/12 sm:h-min-h-screen">
 				<div>
-					<p className="text-xl font-bold text-white">Gertrude</p>
-					<ul className="mt-4 text-white">
+					<p className="mx-auto text-xl font-bold text-center text-white">
+						Gertrude
+					</p>
+					<ul className="px-4 mt-4 text-white">
 						<li className="flex my-2">
 							<svg
 								xmlns="http://www.w3.org/2000/svg"

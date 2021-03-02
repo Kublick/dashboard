@@ -26,7 +26,7 @@ const MainTable = () => {
 						}}
 						columns={["Display Name", "Email", "Status", "Actions"]}
 						data={users.map((user) => [
-							user.name,
+							user.display_name,
 							user.email,
 							user.is_active,
 							_(
